@@ -10,7 +10,7 @@ require (
 	github.com/gorilla/mux v1.8.0
 	github.com/gorilla/schema v1.2.0
 	github.com/iwanbk/gobeanstalk v0.0.0-20160903043409-dbbb23937c31
-	github.com/jackc/pgx/v4 v4.17.0
+	github.com/jackc/pgx/v4 v4.17.1
 	github.com/jessevdk/go-flags v1.5.0
 	github.com/libp2p/go-sockaddr v0.2.0
 	github.com/mattn/go-sqlite3 v2.0.3+incompatible
