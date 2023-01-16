@@ -6,7 +6,7 @@ require (
 	github.com/Wessie/appdirs v0.0.0-20141031215813-6573e894f8e2
 	github.com/anacrolix/missinggo v1.3.0
 	github.com/anacrolix/torrent v1.41.1-0.20220309095723-02b6ee995497
-	github.com/dustin/go-humanize v1.0.0
+	github.com/dustin/go-humanize v1.0.1
 	github.com/gorilla/mux v1.8.0
 	github.com/gorilla/schema v1.2.0
 	github.com/iwanbk/gobeanstalk v0.0.0-20160903043409-dbbb23937c31
