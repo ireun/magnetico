@@ -19,8 +19,8 @@ require (
 	github.com/willf/bloom v2.0.3+incompatible
 	go.uber.org/zap v1.22.0
 	golang.org/x/crypto v0.0.0-20220722155217-630584e8d5aa
-	golang.org/x/sys v0.0.0-20220804214406-8e32c043e418
-	golang.org/x/text v0.3.7
+	golang.org/x/sys v0.5.0
+	golang.org/x/text v0.8.0
 )
 
 require (
