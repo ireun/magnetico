@@ -3,11 +3,11 @@
 all: test magneticod magneticow
 
 magneticod:
-	go install --tags fts5 "-ldflags=-s -w -X main.compiledOn=`date -u +%Y-%m-%dT%H:%M:%SZ`" ./cmd/magneticod
+	go install --tags fts5 --tags libsqlite3 "-ldflags=-s -w -X main.compiledOn=`date -u +%Y-%m-%dT%H:%M:%SZ`" ./cmd/magneticod
 
 magneticow:
 	# TODO: minify /data/* files!
-	go install --tags fts5 "-ldflags=-s -w -X main.compiledOn=`date -u +%Y-%m-%dT%H:%M:%SZ`" ./cmd/magneticow
+	go install --tags fts5 --tags libsqlite3 "-ldflags=-s -w -X main.compiledOn=`date -u +%Y-%m-%dT%H:%M:%SZ`" ./cmd/magneticow
 
 .PHONY: docker
 docker: docker_up docker_logs
@@ -36,7 +36,7 @@ vet:
 	go vet ./...
 
 test:
-	go test ./...
+	go test --tags libsqlite3 ./...
 
 format:
 	gofmt -w ./cmd/
